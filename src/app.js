@@ -1,8 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
-const ip = "127.0.0.1"
+const port = process.env.PORT || 3000;
 const hbs = require("hbs");
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
