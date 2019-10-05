@@ -13,7 +13,9 @@
 <body>
     {{>header}}
     <div class="container">
-        <h1>Hello Welcome to {{website}} HomePage</h1>
+        <div class="heading">
+            <h1>{{website}}</h1>
+        </div>
 
         <form>
             <input name="address" id="location" type="text" placeholder="Location">
@@ -34,13 +36,14 @@
             <div></div>
             <div></div>
         </div>
-
-        <div>
+        <div class="response">
             <span class="err"></span>
             <div id="message">
-                Location: <div class="loc"></div>
-                forecast: <div class="forecast"></div>
-                <img class="atmos" src="" alt="">
+                <div class="loc"></div>
+                <div class="forecast"></div>
+                <div class="img-container">
+                    <img class="atmos" src="" alt="">
+                </div>
             </div>
         </div>
     </div>

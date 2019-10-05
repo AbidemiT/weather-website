@@ -24,16 +24,23 @@ html {
     overflow-x: hidden;
     background: linear-gradient(to right top, #067eb3, #0097c1, #00adb5, #00c090, #38ce59) no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 body {
     color: #fff;
+    
 }
 
 
 img {
     width: 100%;
     object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    
 }
 
 .err {

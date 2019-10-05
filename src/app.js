@@ -19,22 +19,21 @@ hbs.registerPartials(partialsPath);
 app.get('', (req,res) => {
     res.render('index', {
         website: "Weather Forecast",
-        name: "Tiamiyu Sikiru Abidemi"
+        name: "Abit Weather Forecast"
     })
 })
 
 app.get('/about', (req,res) => {
     res.render('about', {
         title: "Me",
-        name: "Tiamiyu Sikiru Abidemi",
-        age: 23
+        name: "Abit Weather Forecast"
     })
 })
 
 app.get('/help', (req,res) => {
     res.render('help', {
         website: "Weather Forecast",
-        name: "Tiamiyu Sikiru Abidemi",
+        name: "Abit Weather Forecast",
         message: "We are here at your service, get the accurate weather forecast for your Location"
     })
 })

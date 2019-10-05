@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
                         err.textContent = "";
                         loc.textContent = data.location;
                         forecast.textContent = data.forecast;
-                        console.log(data.location)
+                        
                         if(data.icon === "cloudy") {
                             atmos.src = "/svg/cloudy.svg";
                         } else if(data.icon === "rain") {

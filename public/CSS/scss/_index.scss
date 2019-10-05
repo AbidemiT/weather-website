@@ -1,0 +1,40 @@
+.container {
+    text-align: center;
+
+    .heading {
+        margin-top: 40px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-family: DINPro-Bold;
+        }
+    }
+
+    form {
+        margin: 40px 20px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        input {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-family: DINPro-Bold;
+            background: #00c090;
+            color: #fff;
+            outline: none;
+        }
+    }
+
+    .response {
+        font-family: 1.2rem;
+        padding: 10px;
+    }
+}
