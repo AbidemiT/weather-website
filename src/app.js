@@ -47,7 +47,7 @@ app.get('/weather', (req,res) => {
         })
     }
 
-    geocode(address, (err, {lat,long,location} = {}) => {
+    geocode(address, (err, {lat,long,locate} = {}) => {
         if (err) {
             return res.send({
                 err
@@ -61,8 +61,9 @@ app.get('/weather', (req,res) => {
                 })
             }
             res.send({
-                forecast: `It's currently ${data.currently.temperature} degrees out. There is ${data.currently.precipProbability}% chance of rain.`,
-                location: location
+                location: locate,
+                forecast: `${data.currently.summary}...It's currently ${data.currently.temperature} degrees out. There is ${data.currently.precipProbability}% chance of rain.`,
+                icon: `${data.currently.icon}`
             })    
         })
     })
