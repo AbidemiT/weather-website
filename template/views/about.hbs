@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,19 @@
     <link rel="stylesheet" href="/CSS/scss/main.css">
     <title>Weather Forecast | About</title>
 </head>
+
 <body>
     {{> header}}
 
-    <h1>About {{title}}</h1>
-
-    <div class="img-container">
-        <img src="./images/ees.jpg" alt="Abidemi Image">
+    <div class="container">
+        <h1>About</h1>
+        <div class="img-contain">
+            <img src="./svg/cloudy-day-2.svg" alt="Weather icon">
+        </div>
+        <p>A easy to navigate weather forecast website for all...  </p>
     </div>
-    <h3>name: {{name}}</h3>
 
     {{> footer}}
 </body>
+
 </html>

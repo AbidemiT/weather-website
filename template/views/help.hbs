@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,17 @@
     <link rel="stylesheet" href="/CSS/scss/main.css">
     <title>Weather Forecast | Help</title>
 </head>
+
 <body>
     {{> header}}
-    <h1>{{website}} Help Page</h1>
-    <p>{{message}}</p> 
+    <div class="container">
+        <div class="heading">
+            <h1>{{website}} Help Page</h1>
+            <p>{{message}}</p>
+        </div>
+    </div>
 
     {{> footer}}
 </body>
+
 </html>

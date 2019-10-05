@@ -1,5 +1,16 @@
-.img-container {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+.container  {
+    margin: 40px 0;
+
+    .img-contain {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .heading {
+        p {
+            margin: 20px 0;
+        }
+    }
 }

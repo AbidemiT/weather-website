@@ -15,3 +15,24 @@ nav {
         }
     }
 }
+
+@include md {
+    nav {
+        padding: 40px 60px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+    
+            li {
+                list-style-type: none;
+    
+                a {
+                    color: #000;
+                    text-transform: uppercase;
+                    font-family: DINPro-Bold;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
