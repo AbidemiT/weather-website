@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/images/beach.png">
+    <link rel="stylesheet" href="/CSS/scss/main.css">
+    <title>Weather Forecast | Home</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="container">
+        <h1>Hello Welcome to {{website}} HomePage</h1>
+
+        <form>
+            <input name="address" id="location" type="text" placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <div id="spin">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <span class="err"></span>
+            <div id="message">
+                Location: <div class="loc"></div>
+                forecast: <div class="forecast"></div>
+            </div>
+        </div>
+    </div>
+
+    {{> footer}}
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
