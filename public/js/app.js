@@ -7,9 +7,6 @@ let forecast = document.querySelector(".forecast");
 let spin = document.querySelector("#spin");
 
 
-
-
-
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     spin.classList.add('lds-default');
@@ -28,6 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
                         spin.classList.remove('lds-default');
                         err.textContent = "";
                         loc.textContent = data.location;
+                        loc.style.color = "#38ce59";
                         forecast.textContent = data.forecast;
                         
                         if(data.icon === "cloudy") {
